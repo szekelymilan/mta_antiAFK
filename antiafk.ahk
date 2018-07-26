@@ -4,10 +4,10 @@
 #Persistent
 
 SetTitleMatchMode, 2
-SetKeyDelay, -1, 1500
+SetKeyDelay, -1, 1000
 
 loop {
-	Random, var, 1,10
+	Random, var, 1,7
 
 	if var = 1
 	{
@@ -37,11 +37,11 @@ loop {
 		ControlSend,, {s}, ahk_class Grand theft auto San Andreas
 		ControlSend,, {d}, ahk_class Grand theft auto San Andreas
 	}
-	else if var > 6
+	else if var = 7
 	{
 		SetKeyDelay, -1, 500
 		ControlSend,, {Space}, ahk_class Grand theft auto San Andreas
-		SetKeyDelay, -1, 1500
+		SetKeyDelay, -1, 1000
 	}
 
 	Sleep, 50
